@@ -19,6 +19,22 @@ const cryptoSchema = new Schema({
         type: Number,
         required: false,
     },
+    priceChangeDailyPercent: {
+        type: Number,
+        required: false,
+    },
+    predictedPriceChangePercent: {
+        type: Number,
+        required: false,
+    },
+    predictedPriceChangeInterval: {
+        type: Number,
+        required: false,
+    },
+    predictedPrices: {
+        type: Array,
+        required: false,
+    },
 });
 
 module.exports = mongoose.model('Crypto', cryptoSchema);
